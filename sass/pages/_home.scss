@@ -1,0 +1,64 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 50rem 0;
+  width: 100%;
+  margin-top: -21vh;
+}
+
+.section-features {
+  padding: 20rem 0 20rem 0;
+  background-image: linear-gradient(to right bottom,
+      rgba($color-secondary-light, 0.8),
+      rgba($color-tertiary-dark, 0.8)),
+    url(../../img/hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -44vh;
+  -webkit-clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 23%);
+  clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 23%);
+  // transform: skewx(-7deg);
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -25vh;
+  overflow: hidden;
+
+  .rows-container {
+    @include _3columns;
+    grid-gap: 6rem;
+
+  }
+
+}
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+  padding-top: 10vh;
+}
+
+.section-book {
+  padding: 15rem 0;
+  margin-top: -10vh;
+  background-image: linear-gradient(to right bottom, $color-secondary-light, $color-tertiary-dark);
+}
+
+.book {
+  background-image: linear-gradient(105deg,
+      rgba($color-white, .9) 0%,
+      rgba($color-white, .9) 50%,
+      transparent 50%),
+    url(../../img/nat-10.jpg);
+
+  background-size: 100%;
+  border-radius: $border-rad;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"name": "real_madrid",
+	"version": "1.0.0",
+	"description": "Landing page Real Madrid",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"author": "Mihai J.",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^4.13.1"
+	}
+}
